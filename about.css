@@ -1,0 +1,326 @@
+ :root{
+      --gap: 10px;
+      --cell-height: 150px; 
+    }
+
+    *{box-sizing:border-box}
+    body{
+      font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      height:100vh;
+      display:flex;
+      background:#f6f7fb;
+    }
+
+ 
+    .left{
+      width:50%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      background:#f6f7fb;
+      padding:24px;
+      border-right:2px solid #e0e0e0;
+      position: relative;
+    }
+
+
+    .right{
+      width:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#ffffff;
+      color:#333;
+      font-size:18px;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+   .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, var(--cell-height));
+  gap: var(--gap);
+  width: 100%;
+}
+
+.cell {
+  position: relative;
+  overflow: hidden; 
+  background: linear-gradient(180deg,#fff,#f3f6ff);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(20,30,60,0.05);
+  border: 1px solid rgba(20,30,60,0.04);
+}
+
+.cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: scale(0.9); 
+  transition: transform 0.3s ease;
+}
+
+.cell img:hover {
+  transform: scale(1); 
+}
+
+    .label{
+      position:absolute;
+      left:8px;
+      top:8px;
+      background:rgba(0,0,0,0.55);
+      color:#fff;
+      padding:4px 6px;
+      border-radius:4px;
+      font-size:11px;
+      object-fit: contain; 
+    }
+
+    #label1:hover{
+      width:102%;
+      height:102%;
+      box-shadow: 0px 0px 40px 10px rgb(59, 1, 1);
+      transition-duration:1s;
+      position: relative;
+      top:-1vh;
+    }
+
+    
+    #label2:hover{
+      width:102%;
+      height:102%;
+      box-shadow: 0px 0px 40px 10px rgb(59, 1, 1);
+      transition-duration:1s;
+      position: relative;
+      top:-1vh;
+    }
+    
+    #label3:hover{
+      width:102%;
+      height:102%;
+      box-shadow: 0px 0px 40px 10px rgb(59, 1, 1);
+      transition-duration:1s;
+      position: relative;
+      top:-1vh;
+    }
+    
+    #label4:hover{
+      width:102%;
+      height:102%;
+      box-shadow: 0px 0px 40px 10px rgb(59, 1, 1);
+      transition-duration:1s;
+      position: relative;
+      top:1vh;
+    }
+
+    
+    #label5:hover{
+      width:102%;
+      height:102%;
+      box-shadow: 0px 0px 40px 10px rgb(59, 1, 1);
+      transition-duration:1s;
+      position: relative;
+      top:1vh;
+    }
+
+    
+    #label6:hover{
+      width:102%;
+      height:102%;
+      box-shadow: 0px 0px 40px 10px rgb(59, 1, 1);
+      transition-duration:1s;
+      position: relative;
+      top:1vh;
+    }
+
+    #contact_us_heading{
+      position: absolute;
+      margin-top: -590px;
+      font-weight: lighter;
+      font-family: fantasy;
+      letter-spacing: 2px;
+      color: rgb(255, 255, 255);
+
+    }
+
+    #input_box1{
+      position: absolute;
+      margin-bottom: 50vh;
+      width: 70vh;
+      height:10vh;
+      border-radius: 40px;
+      border-style:solid;
+      border-width:1px;
+      border-color:rgb(21, 78, 128);
+      font-weight: lighter;
+    
+    opacity: 20%;
+    }
+    
+    #input_box2{
+      position: relative;
+      margin-bottom: 20vh;
+      width: 70vh;
+      height:10vh;
+      border-radius: 40px;
+      border-style:solid;
+      border-width:1px;
+      border-color: rgb(21, 78, 128);
+      opacity: 20%;
+       
+      font-weight: lighter;
+      color: #e0e0e0;
+    }
+
+  .submit_button{
+      position: absolute;
+      margin-bottom:-70vh;
+      margin-right:12px;
+        width: 70vh;
+      height:10vh;
+      border-radius: 40px;
+      border-style:solid;
+      border-width:1px;
+      border-color: rgb(21, 78, 128);
+      background-color: rgb(66, 4, 200);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: lighter;
+      letter-spacing: 2px;
+       box-shadow: 0px 0px 40px 10px rgb(66, 4, 200);
+       font-size: xx-large;
+       color:white;
+  }
+
+  #send_message{
+    position:absolute;
+     margin-bottom:-20vh;
+     width: 70vh;
+      height:20vh;
+      border-radius: 40px;
+      border-style:solid;
+      border-width:1px;
+      border-color:rgb(21, 78, 128);
+     opacity: 20%;
+       letter-spacing: 3px;
+      
+
+  }
+
+  .input_box{
+    background-color: aliceblue;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+
+.right{
+background: linear-gradient(65deg,purple,black,rgb(1, 231, 252),rgb(122, 197, 153),rgb(248, 244, 247));
+background-size: 400% 400%;
+animation: gradientMove 15s ease infinite;
+}
+
+.who_are_we{
+  position:absolute;
+  top:5px;
+  left:40px;
+  backdrop-filter: blur(5x0px);
+-webkit-backdrop-filter: blur(10px); 
+background: linear-gradient(65deg,purple,black,rgb(1, 231, 252),rgb(122, 197, 153),rgb(248, 244, 247));
+border-radius: 30px;
+padding-bottom: 4px;
+padding-left:15px;
+padding-right:15px;
+opacity: 30%;
+box-shadow: 0px 0px 40px 10px rgb(66, 4, 200);
+border-style: solid;
+border-width: 1px;
+border-color: #e0e0e0;
+
+}
+
+.text{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  color: #e0e0e0;
+}
+
+.paragraph1{
+  position:absolute;
+  left:25vh;
+  top: 20px;
+  width:75vh;
+  height:28vh;
+  border-radius: 10px;
+  align-content: center;
+  opacity:50%;
+
+
+}
+#paragraph1{
+  color:rgb(141, 91, 91);
+
+}
+
+.contact img,
+.contacts img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.contact{
+  position: absolute;
+  bottom: 50px;                
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+    
+}
+.one{
+    box-shadow: 0 20px 15px rgb(0, 238, 255) ;
+     opacity: 80%;
+}
+
+
+.contact a {
+  font-size: 26px;
+  color: rgb(170, 124, 124);       
+  transition: 0.3s ease;
+}
+
+.contact a:hover {
+  transform: scale(1.2);
+  color: white;
+  text-shadow: 0 0 15px rgba(66, 4, 200, 0.8);
+}
+
+
+.contact a,
+.contact a:visited,
+.contact a i {
+  color: rgb(66, 4, 200);
+  font-size: 26px;
+  transition: 0.3s ease;
+}
+
+.contact a:hover i {
+  transform: scale(1.2);
+  color: white;
+  text-shadow: 0 0 15px rgba(66, 4, 200, 0.8);
+  bottom:-50px;
+
+}
+
+.input_boxes:hover{
+  width: max-content;
+  color: white;
+  transition: 3s;
+}
